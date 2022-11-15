@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompuMundoHiperMegaRed</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="almacen.js"></script>
+    <script src="producto.js"></script>
+    <link rel="icon" href="img/icono.png" type="image/png">
+</head>
+<body>
+<header>
+    <nav>
+        <img src="img/icono-home.png" alt="CompuMundoHiperMegaRed" title="CompuMundoHiperMegaRed">
+        <!--las categorías son creadas dinámicamente-->
+        <select name="categorias" id="categorias" onchange="generarMercado(this.value)">
+            <option value="todas">Todos los productos</option>
+        </select>
+        <div><img src="img/carrito.png" alt="carrito" title="Ver el carrito" onclick="crearItemsCarro(carrito)"><span id="numitems">X</span></div>
+    </nav>
+</header>
+<!--productos que se van a mostrar dinámicamente-->
+<section id="elementos"></section>
+<script src="index.js"></script>
+<footer>&copy;2022 - Matías Godoy - <a href="https://github.com/msebastianlupo" target="_blank">@msebastianlupo</a></footer>
+</body>
+</html>
